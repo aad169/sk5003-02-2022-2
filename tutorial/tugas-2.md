@@ -66,3 +66,52 @@ Pada code ini hanya mengambil beberapa function dan attribute di dalam modul mat
 - function exp(x) berfungsi untuk memberikan hasil nilai pangkat suatu angka x dari bilangan euler (E)
 - atribut e berfungsi untuk memberikan nilai dari bilangan euler (E) 
 - atribut pi berfungsi untuk memberikan nilai dari bilangan pi
+
+### 3. Tentukan output dari program tersebut dan jelaskan dengan singkat mengenai modul tersebut. Kemudian, buatlah juga suatu program yang menggunakan modul random.
+```py
+import random 
+
+print('Random number from 0 to 1 :', random.random()) 
+print('Uniform Distribution between [1,10] :', random.uniform(1, 10)) 
+print('Gaussian Distribution with mean = 0.5 and standard deviation = 1.5 :', random.gauss(0.5, 1.5)) 
+print('Exponential Distribution with lambda = 0.95 :', random.expovariate(0.95)) 
+print('Normal Distribution with mean = 1 and standard deviation = 3.8:', random.normalvariate(1, 3.8))
+```
+output dari code tersebut adalah
+```console
+Random number from 0 to 1 : 0.7632939515958689
+Uniform Distribution between [1,10] : 5.974400397042564
+Gaussian Distribution with mean = 0.5 and standard deviation = 1.5 : -1.2831672015880553
+Exponential Distribution with lambda = 0.95 : 2.2513731859353276
+Normal Distribution with mean = 1 and standard deviation = 3.8: 6.97954521878103
+```
+Modul random adalah modul built-in dari python yang dapat digunakan untuk memberikan nilai random.
+Ada banyak metode untuk pengambilan nilai random pada modul ini. Contohnya adalah:
+- uniform(x, y) berfungsi untuk mengambil nilai random dengan tipe float antara x dan y
+- gauss(x, y) berfungsi untuk mengambil nilai random berdasarkan distribusi gauss dengan parameter mean(x) dan standar deviasi(y)
+- expovariate(x) berfungsi untuk mengambil nilai random berdasarkan distribusi eksponensial dengan parameter x adalah lambda
+- normalvariate(x, y) berfungsi untuk mengambil nilai random berdasarkan distribusi normal dengan parameter mean(x) dan standar deviasi(y)
+
+Berikut adalah program pengembangan yang dibuat dengan modul random.<br>
+Program ini berfungsi untuk membuat kelompok secara acak pada sejumlah mahasiswa
+```py
+import random
+
+#list 15 mahasiswa untuk pembentukan 5 kelompok dengan masing-masing kelompok terdiri dari 3 mahasiswa
+mahasiswa = ['adi', 'ani', 'putra', 'desi', 'dewi', 'dimas', 'putri', 'dani', 'ayu', 'reza', 'tika', 'andika', 'sari', 'ika', 'agus']
+
+#random array mahasiswa
+random.shuffle(mahasiswa)
+
+#tampilkan 5 kelompok yang terdiri dari 3 mahasiswa per kelompok
+for i in range(5):
+    print("kelompok", i+1, "adalah", mahasiswa[i*3:(i*3)+3])
+```
+output dari program tersebut adalah
+```console
+kelompok 1 adalah ['ayu', 'dani', 'agus']
+kelompok 2 adalah ['tika', 'putri', 'ika']
+kelompok 3 adalah ['reza', 'dimas', 'adi']
+kelompok 4 adalah ['ani', 'desi', 'andika']
+kelompok 5 adalah ['dewi', 'sari', 'putra']
+```
