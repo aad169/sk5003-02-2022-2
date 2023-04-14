@@ -44,6 +44,7 @@ class Pembangkit:
         return self.status
 ```
 
+
 Module Boiler.py berisi class Boiler
 ```py
 class Boiler:
@@ -92,6 +93,7 @@ class Boiler:
             self.setPressure(0)
 ```
 
+
 Module Turbine.py berisi class Turbine
 ```py
 class Turbine:
@@ -117,6 +119,7 @@ class Turbine:
     def getSpin(self):
         return self.spin
 ```
+
 
 Program utama untuk melakukan operasi starting up pembangkit
 ```py
