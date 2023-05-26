@@ -50,12 +50,15 @@ x.set_title  ("Rata-rata nilai siswa berdasarkan sekolah",fontsize =15)
 sns.set_style("whitegrid")
 plt.show()
 ```
-Ini hasil sebaran data nilai rata-rata seluruh siswa. Titik biru menunjukkan sekolah GP, titik merah menunjukkan sekolah MS
 
+# Hasil Plot
+Ini hasil sebaran data nilai rata-rata seluruh siswa.<br>
+Titik biru menunjukkan sekolah GP, titik merah menunjukkan sekolah MS.
+<br>
 ![image](https://github.com/aad169/sk5003-02-2022-2/assets/127568994/323a63fe-fb59-4fa4-912a-2a642702648b)
-
-Berikut adalah hasil nilai rata-rata siswa berdasarkan sekolah
-
+<br><br>
+Berikut adalah hasil nilai rata-rata siswa berdasarkan sekolah.
+<br>
 ![image](https://github.com/aad169/sk5003-02-2022-2/assets/127568994/38bffc80-1347-4a61-aa70-d944d03c4ecb)
 
 
